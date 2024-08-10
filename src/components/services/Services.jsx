@@ -1,10 +1,12 @@
 import React from 'react'
 import './services.css'
+import uiux from "../../assets/design.png"
+import web from "../../assets/dev.png"
 
 const services = [
   {
     id: 1,
-    image: 'src/assets/design.png',
+    image: uiux,
     title: 'UI / UX',
     items: [
       '📌Create automatic and visually appealing user-friendly interfaces.', 
@@ -14,7 +16,7 @@ const services = [
   },
   {
     id: 2,
-    image: 'src/assets/dev.png',
+    image: web,
     title: 'Web Development',
     items: [
       '📌Develop responsive web pages using Front-end Development.', 

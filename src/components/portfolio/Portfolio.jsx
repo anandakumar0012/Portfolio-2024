@@ -1,31 +1,50 @@
 import React from 'react'
 import './portfolio.css'
+import health from "../../assets/Project1.png"
+// import book from "../../assets/Project2.png"
+import ecommerce from "../../assets/Project3.png"
+// import whatsapp from "../../assets/Project4.png"
+import P2_I1 from '../../assets/P2_I1.png'
+import P2_I2 from '../../assets/P2_I2.png'
+import P2_I3 from '../../assets/P2_I3.png'
+import P2_I4 from '../../assets/P2_I4.png'
+import P2_I5 from '../../assets/P2_I5.png'
+import P2_I6 from '../../assets/P2_I6.png'
+
+import P1_I1 from '../../assets/P1_I1.png'
+import P1_I2 from '../../assets/P1_I2.png'
+import P1_I3 from '../../assets/P1_I3.png'
+import P1_I4 from '../../assets/P1_I4.png'
+import P1_I5 from '../../assets/P1_I5.png'
+
+
+
 
 const cards = [
   {
     id: 1,
-    image: 'src/assets/Project1.png',
+    image: health,
     title: 'Health Care Website',
     link1: 'https://github.com/anandakumar0012/Healthy_Living_Tips',
     link2: 'https://healthyhub-anandakumar0012s-projects.vercel.app/',
   },
   // {
   //   id: 2,
-  //   image: 'src/assets/Project2.png',
+  //   image: book,
   //   title: 'Book Store Website',
   //   link1: 'Github',
   //   link2: 'Live Demo',
   // },
   {
     id: 3,
-    image: 'src/assets/Project3.png',
+    image: ecommerce,
     title: 'E-Commerce Website',
     link1: 'https://github.com/anandakumar0012/E-commerce_Sweet-Sounds',
     link2: 'https://e-commerce-sweet-sounds.vercel.app/',
   },
   // {
   //   id: 4,
-  //   image: 'src/assets/Project4.png',
+  //   image: whatsapp,
   //   title: 'Whatsapp Clone',
   //   link1: 'Github',
   //   link2: 'Live Demo',
@@ -33,20 +52,20 @@ const cards = [
 ];
 
 const verticalImages1 = [
-  { image: 'src/assets/P2_I1.png', title: 'Slidein Menu Page' },
-  { image: 'src/assets/P2_I2.png', title: 'Homepage page' },
-  { image: 'src/assets/P2_I3.png', title: 'Product Details Page' },
-  { image: 'src/assets/P2_I4.png', title: 'Checkout Page' },
-  { image: 'src/assets/P2_I5.png', title: 'Confirmation Page' },
-  { image: 'src/assets/P2_I6.png', title: 'Reviews Page' },
+  { image: P2_I1, title: 'Slidein Menu Page' },
+  { image: P2_I2, title: 'Homepage page' },
+  { image: P2_I3, title: 'Product Details Page' },
+  { image: P2_I4, title: 'Checkout Page' },
+  { image: P2_I5, title: 'Confirmation Page' },
+  { image: P2_I6, title: 'Reviews Page' },
 ];
 
 const verticalImages2 = [
-  { image: 'src/assets/P1_I1.png', title: 'Main Page' },
-  { image: 'src/assets/P1_I2.png', title: 'Blog Page' },
-  { image: 'src/assets/P1_I3.png', title: 'FoodRecipe Page' },
-  { image: 'src/assets/P1_I4.png', title: 'ClimateWise Precautions Page' },
-  { image: 'src/assets/P1_I5.png', title: 'Shop Page' },
+  { image: P1_I1, title: 'Main Page' },
+  { image: P1_I2, title: 'Blog Page' },
+  { image: P1_I3, title: 'FoodRecipe Page' },
+  { image: P1_I4, title: 'ClimateWise Precautions Page' },
+  { image: P1_I5, title: 'Shop Page' },
 ];
 
 const Portfolio = () => {

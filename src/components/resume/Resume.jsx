@@ -1,34 +1,51 @@
 import React from 'react'
 import './resume.css'
+import srm from "../../assets/srm.png"
+import nandha from "../../assets/nandha.png"
+import ibm from "../../assets/ibm.png"
+import hcl from "../../assets/hcl.png"
+import tcs from "../../assets/tcs.png"
+import html from "../../assets/html.png"
+import css from "../../assets/css.png"
+import javascript from "../../assets/js.png"
+import bootstrap from "../../assets/bootstrap.png"
+import jquery from "../../assets/jquery.png"
+import api from "../../assets/api.png"
+import react from "../../assets/react.png"
+import node from "../../assets/node.png"
+import express from "../../assets/express.png"
+import mongodb from "../../assets/mongodb.png"
+import git from "../../assets/git.png"
+import figma from "../../assets/figma.png"
 
 const cards = [
   {
     id: 1,
-    image: 'src/assets/srm.png',
+    image: srm,
     title: 'SRM Institute of Science and Technology',
     content: ['Master of Computer Application', '2023 - Present']
   },
   {
     id: 2,
-    image: 'src/assets/nandha.png',
+    image: nandha,
     title: 'Nandha Arts and Science',
     content: ['Bachelor of Computer Application', '2017 - 2020']
   },
   {
     id: 3,
-    image: 'src/assets/ibm.png',
+    image: ibm,
     title: 'International Business Machines',
     content: ['Bangalore - Intern', 'Jul 2024 - Present']
   },
   {
     id: 4,
-    image: 'src/assets/hcl.png',
+    image: hcl,
     title: 'Hindustan Computers Limited',
     content: ['Bangalore - Full Time', 'May 2022 - Oct 2023']
   },
   {
     id: 5,
-    image: 'src/assets/tcs.png',
+    image: tcs,
     title: 'Tata Consultancy Services',
     content: ['Chennai - Full Time', 'Oct 2020 - Jan 2022']
   },
@@ -37,62 +54,62 @@ const cards = [
 const smallCards = [
   {
     id: 1,
-    image: 'src/assets/html.png',
+    image: html,
     text: 'HTML'
   },
   {
     id: 2,
-    image: 'src/assets/css.png',
+    image: css,
     text: 'CSS'
   },
   {
     id: 3,
-    image: 'src/assets/js.png',
+    image: javascript,
     text: 'JavaScript'
   },
   {
     id: 4,
-    image: 'src/assets/bootstrap.png',
+    image: bootstrap,
     text: 'Bootstrap'
   },
   {
     id: 5,
-    image: 'src/assets/jquery.png',
+    image: jquery,
     text: 'JQuery'
   },
   {
     id: 6,
-    image: 'src/assets/api.png',
+    image: api,
     text: 'API'
   },
   {
     id: 7,
-    image: 'src/assets/react.png',
+    image: react,
     text: 'React.js'
   },
   {
     id: 8,
-    image: 'src/assets/node.png',
+    image: node,
     text: 'Node.js'
   },
   {
     id: 9,
-    image: 'src/assets/express.png',
+    image: express,
     text: 'Express.js'
   },
   {
     id: 10,
-    image: 'src/assets/mongodb.png',
+    image: mongodb,
     text: 'MongoDB'
   },
   {
     id: 11,
-    image: 'src/assets/git.png',
+    image: git,
     text: 'Git'
   },
   {
     id: 12,
-    image: 'src/assets/figma.png',
+    image: figma,
     text: 'Figma'
   },
 ];
