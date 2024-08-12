@@ -1,9 +1,9 @@
 import React from 'react'
 import './portfolio.css'
 import health from "../../assets/Project1.png"
-// import book from "../../assets/Project2.png"
+import book from "../../assets/Project2.png"
 import ecommerce from "../../assets/Project3.png"
-// import whatsapp from "../../assets/Project4.png"
+import whatsapp from "../../assets/Project4.png"
 import P2_I1 from '../../assets/P2_I1.png'
 import P2_I2 from '../../assets/P2_I2.png'
 import P2_I3 from '../../assets/P2_I3.png'
@@ -28,13 +28,13 @@ const cards = [
     link1: 'https://github.com/anandakumar0012/Healthy_Living_Tips',
     link2: 'https://healthyhub-anandakumar0012s-projects.vercel.app/',
   },
-  // {
-  //   id: 2,
-  //   image: book,
-  //   title: 'Book Store Website',
-  //   link1: 'Github',
-  //   link2: 'Live Demo',
-  // },
+  {
+    id: 2,
+    image: book,
+    title: 'Book Store Website',
+    link1: 'https://github.com/anandakumar0012/Book_Store',
+    link2: 'https://book-store-front-ten.vercel.app/',
+  },
   {
     id: 3,
     image: ecommerce,
@@ -42,13 +42,13 @@ const cards = [
     link1: 'https://github.com/anandakumar0012/E-commerce_Sweet-Sounds',
     link2: 'https://e-commerce-sweet-sounds.vercel.app/',
   },
-  // {
-  //   id: 4,
-  //   image: whatsapp,
-  //   title: 'Whatsapp Clone',
-  //   link1: 'Github',
-  //   link2: 'Live Demo',
-  // },
+  {
+    id: 4,
+    image: whatsapp,
+    title: 'Whatsapp Clone',
+    link1: 'https://github.com/anandakumar0012/WhatsApp_Clone',
+    link2: 'https://whatsapp-mern-a9e9b.web.app/',
+  },
 ];
 
 const verticalImages1 = [
