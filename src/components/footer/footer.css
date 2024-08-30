@@ -35,31 +35,31 @@
     transition: color 0.3s ease;
   }
   
-  .footer-social-icons .linkedin:hover {
+  .footer-social-icons .linkedin {
     color: var(--color-white);
     background-color: #0D5B9E;
     border: 2px solid #0D5B9E;
   }
 
-  .footer-social-icons .github:hover {
+  .footer-social-icons .github {
     color: var(--color-white);
     background-color: black;
     border: 2px solid black;
   }
 
-  .footer-social-icons .facebook:hover {
+  .footer-social-icons .facebook {
     color: var(--color-white);
     background-color: #0D45F4;
     border: 2px solid #0D45F4;
   }
 
-  .footer-social-icons .instagram:hover {
+  .footer-social-icons .instagram {
     color: var(--color-white);
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     border: 2px solid transparent;
   }
 
-  .footer-social-icons .twitter:hover {
+  .footer-social-icons .twitter {
     color: var(--color-white);
     background-color: #1C87E4;
     border: 2px solid #1C87E4;

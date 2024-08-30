@@ -99,31 +99,31 @@
     transition: all 0.3s ease;
   }
 
-  .social-icons .linkedin:hover {
+  .social-icons .linkedin {
     color: var(--color-white);
     background-color: #0D5B9E;
     border: 2px solid #0D5B9E;
   }
 
-  .social-icons .github:hover {
+  .social-icons .github {
     color: var(--color-white);
     background-color: black;
     border: 2px solid black;
   }
 
-  .social-icons .facebook:hover {
+  .social-icons .facebook {
     color: var(--color-white);
     background-color: #0D45F4;
     border: 2px solid #0D45F4;
   }
 
-  .social-icons .instagram:hover {
+  .social-icons .instagram {
     color: var(--color-white);
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     border: 2px solid transparent;
   }
 
-  .social-icons .twitter:hover {
+  .social-icons .twitter {
     color: var(--color-white);
     background-color: #1C87E4;
     border: 2px solid #1C87E4;

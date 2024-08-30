@@ -48,12 +48,10 @@
   }
   
   .portfolio-card {
-    background-color: black;
     color: var(--color-white);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
   
   .portfolio-card-image img {
@@ -71,19 +69,30 @@
     display: flex;
     justify-content: space-evenly;
   }
+
+  .bottom-card {
+    border: 1px solid gray;
+    border-radius: 0 0 10px 10px;
+  }
   
   .portfolio-card-links a {
-    color: var(--color-white);
-    background-color: rgb(47, 47, 47);
-    padding: 10px 20px;
-    border-radius: 5px;
+    background-image: linear-gradient(to right, #F7971E 0%, #FFD200  51%, #F7971E  100%);
+    margin: 10px;
+    padding: 10px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    display: block;
   }
   
   .portfolio-card-links a:hover {
-    background-color: var(--color-primary);
-    color: black;
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
   }
   
   @media (max-width: 768px) {

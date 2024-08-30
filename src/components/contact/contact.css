@@ -82,7 +82,7 @@
   }
   
   .contact-card a {
-    color: gray;
+    color: #F7971E;
     text-decoration: none;
     font-weight: 400;
     font-size: 0.8rem;
@@ -117,41 +117,44 @@
   }
   
   .contact-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: rgb(47, 47, 47);
-    color: var(--color-white);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-bottom: 30px;
+    background-image: linear-gradient(to right, #F7971E 0%, #FFD200  51%, #F7971E  100%);
+    margin: 10px;
+    padding: 10px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    width: 95%;
   }
   
   .contact-form button:hover {
-    background-color: var(--color-primary);
-    color: black;
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
   }
 
   .contact-form a {
-    width: 100%;
-    padding: 10px;
-    background-color: rgb(47, 47, 47);
-    color: var(--color-white);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-bottom: 30px;
+    background-image: linear-gradient(to right, #F7971E 0%, #FFD200  51%, #F7971E  100%);
+    margin: 10px;
+    padding: 5px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
   }
 
   .contact-form a:hover {
-    background-color: var(--color-primary);
-    color: black;
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
   }
   
   @media (max-width: 768px) {

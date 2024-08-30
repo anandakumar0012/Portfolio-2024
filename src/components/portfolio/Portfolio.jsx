@@ -97,12 +97,14 @@ const Portfolio = () => {
               <div className="portfolio-card-image">
                 <img src={card.image} alt={card.title} />
               </div>
+              <div className='bottom-card'>
               <div className="portfolio-card-title">{card.title}</div>
               <div className="portfolio-card-links">
                 {/* <a href="#">{card.link1}</a>
                 <a href="#">{card.link2}</a> */}
                 <a href={card.link1} target="_blank" rel="noopener noreferrer">Github</a>
                 <a href={card.link2} target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
               </div>
             </div>
           ))}
@@ -118,9 +120,11 @@ const Portfolio = () => {
               <div className="portfolio-card-image">
                 <img src={verticalCard.image} alt={verticalCard.title} />
               </div>
+              <div className='bottom-card'>
               <div className="portfolio-card-title">{verticalCard.title}</div>
               <div className="portfolio-card-links">
                 <a href={verticalCard.link1} target="_blank" rel="noopener noreferrer">Behance</a>
+              </div>
               </div>
             </div>
           ))}
