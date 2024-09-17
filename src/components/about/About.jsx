@@ -1,7 +1,10 @@
 import React from 'react'
 import './about.css'
-import { FaLinkedin, FaGithub, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaBehanceSquare, FaTwitter } from 'react-icons/fa';
 import About from "../../assets/about.jpg";
+import WordRotate from '../word-rotate';
+
+const words = ["Front-End Developer", "Web Developer", "Software Developer"];
 
 function about() {
   return (
@@ -14,18 +17,18 @@ function about() {
       </div>
       <div className="right-side">
         <h5 className="subtitle">Hello It's Me</h5>
-        <h1 className="title"><span>Ananda Kumar</span><br />I'm a <span>Front-end Web Developer</span></h1>
+        <h1 className="title">Ananda Kumar</h1>
+        <h1 className='title-work'>I'm a <span><WordRotate words={words}/></span></h1>
         <p className="description">
-        Results-driven software engineer with 2.8 years of experience in <br />website development. 
-        Self-motivated and eager to learn advanced technologies. Experienced in building asset management 
-        applications and proficient in <br />self-learning front-end technologies through practical website development.
+        Passionate software engineer with 2.9 years of hands-on experience in web development. Driven by curiosity and a 
+        commitment to mastering new technologies, I have a experience of developing asset management applications and 
+        refining my front-end skills through self-taught website projects.
         </p>
         <div className="social-icons">
-          <a className='linkedin' href="https://www.linkedin.com/in/ananda-kumar-b08803228/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-          <a className='github' href="https://github.com/anandakumar0012" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-          <a className='facebook' href="https://www.facebook.com/anandduke.anand" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-          <a className='instagram' href="https://www.instagram.com/anand_hyna/?hl=en" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-          <a className='twitter' href="https://x.com/anandakumar0012" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+          <a className='linkedin' href="https://www.linkedin.com/in/ananda-kumar-b08803228/" target="_blank" rel="noopener noreferrer" data-title="LinkedIn"><FaLinkedin /></a>
+          <a className='github' href="https://github.com/anandakumar0012" target="_blank" rel="noopener noreferrer" data-title="Github"><FaGithub /></a>
+          <a className='behance' href="https://www.behance.net/knrdancers" target="_blank" rel="noopener noreferrer" data-title="Behance"><FaBehanceSquare /></a>
+          <a className='twitter' href="https://x.com/anandakumar0012" target="_blank" rel="noopener noreferrer" data-title="Twitter"><FaTwitter /></a>
         </div>
       </div>
     </div>

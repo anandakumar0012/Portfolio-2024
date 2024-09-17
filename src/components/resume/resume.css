@@ -8,8 +8,8 @@ body, html {
 .resume-section {
   width: 100%;
   height: 100%;
-  padding: 100px;
-  margin-top: 80px;
+  padding: 70px;
+  margin-top: 40px;
   scroll-margin-top: 40px;
 }
 
@@ -41,7 +41,7 @@ body, html {
   font-size: 1.5rem;
   color: var(--color-white);
   margin-bottom: 20px;
-  text-decoration: underline 5px solid var(--color-primary);
+  /* text-decoration: underline 5px solid var(--color-primary); */
 }
 
 .cards-container {
@@ -82,31 +82,51 @@ body, html {
 }
 
 .right-section .small-cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .small-card {
   background-color: #000;
   color: var(--color-white);
-  padding: 10px;
+  width: 80%;
+  padding: 0;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   display: flex;
-  width: 48%;
-  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  position: relative;
+  cursor: pointer;
 }
 
 .small-card-image {
-  width: 20%;
-  max-width: 30px;
-  max-height: 30px;
-  margin-right: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 .small-card-text {
-  width: 80%;
+  position: absolute;
+  top: -40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  padding: 5px 10px;
+  border-radius: 4px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.small-card:hover .small-card-text {
+  opacity: 1; /* Show the text on hover */
+  transform: translateY(0); /* Reset the translation */
 }
 
 @media (max-width: 768px) {
@@ -116,6 +136,7 @@ body, html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 200px;
   }
 
   .left-section, .right-section {
@@ -130,6 +151,15 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .small-card {
+    height: 80px;
+  }
+
+  .right-section .small-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
   .cards-container {
@@ -147,22 +177,23 @@ body, html {
     justify-content: center;
   }
 
-  .small-card-image, .card-image {
+  .card-image {
     width: 100%;
     margin-bottom: 10px;
   }
 
-  .small-card-text, .card-content {
-    width: 100%;
+  .small-card-image {
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
   }
 
-  .small-card-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .card-content {
+    width: 100%;
   }
 
   .small-cards-container {
     justify-content: center;
+    gap: 10px;
   }
 }

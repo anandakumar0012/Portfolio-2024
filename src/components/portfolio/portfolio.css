@@ -50,14 +50,28 @@
   .portfolio-card {
     color: var(--color-white);
     padding: 20px;
-    border-radius: 8px 8px 0 0;
+    border-radius: 10px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+
+  .portfolio-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-card:hover .portfolio-card-image img {
+    filter: blur(3px);
+    transform: scale(1.1);
+}
   
   .portfolio-card-image img {
     width: 100%;
     height: auto;
-    border-radius: 8px 8px 0 0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
   }
   
   .portfolio-card-title {
@@ -68,15 +82,28 @@
   .portfolio-card-links {
     display: flex;
     justify-content: space-evenly;
+    cursor: pointer;
   }
 
   .bottom-card {
-    border: 1px solid gray;
-    border-radius: 0 0 10px 10px;
-  }
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: gray;
+    padding: 15px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-card:hover .bottom-card {
+    opacity: 1;
+    transform: translateY(0);
+}
   
   .portfolio-card-links a {
-    background-image: linear-gradient(to right, #F7971E 0%, #FFD200  51%, #F7971E  100%);
+    background-color: var(--color-primary);
     margin: 10px;
     padding: 10px 35px;
     text-align: center;
@@ -99,10 +126,14 @@
     .portfolio-card-grid {
       grid-template-columns: 1fr;
       width: 300px;
+      align-items: center;
+      justify-content: center;
     }
 
     .portfolio-card-links {
       gap: 10px;
+      height: 70px;
+      width: 70px;
     }
   }
 
@@ -175,10 +206,40 @@
     .vertical-images-grid {
       grid-template-columns: repeat(3, 1fr);
     }
+
+    .bottom-card {
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .portfolio-card-title {
+      font-size: 1.2rem;
+  }
+
+  .portfolio-card-links a {
+      padding: 8px 25px;
+      font-size: 0.9rem;
+  }
   }
   
   @media (max-width: 480px) {
     .vertical-images-grid {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    .bottom-card {
+      padding: 15px;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .portfolio-card-title {
+      font-size: 1rem;
+  }
+
+  .portfolio-card-links a {
+      padding: 5px 20px;
+      font-size: 0.8rem;
+  }
   }

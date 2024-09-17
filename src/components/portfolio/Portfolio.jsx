@@ -4,21 +4,6 @@ import health from "../../assets/Project1.png"
 import book from "../../assets/Project2.png"
 import ecommerce from "../../assets/Project3.png"
 import whatsapp from "../../assets/Project4.png"
-// import P2_I1 from '../../assets/P2_I1.png'
-// import P2_I2 from '../../assets/P2_I2.png'
-// import P2_I3 from '../../assets/P2_I3.png'
-// import P2_I4 from '../../assets/P2_I4.png'
-// import P2_I5 from '../../assets/P2_I5.png'
-// import P2_I6 from '../../assets/P2_I6.png'
-
-// import P1_I1 from '../../assets/P1_I1.png'
-// import P1_I2 from '../../assets/P1_I2.png'
-// import P1_I3 from '../../assets/P1_I3.png'
-// import P1_I4 from '../../assets/P1_I4.png'
-// import P1_I5 from '../../assets/P1_I5.png'
-
-
-
 
 const cards = [
   {
@@ -66,23 +51,6 @@ const verticalCard = [
   },
 ]
 
-// const verticalImages1 = [
-//   { image: P2_I1, title: 'Slidein Menu Page' },
-//   { image: P2_I2, title: 'Homepage page' },
-//   { image: P2_I3, title: 'Product Details Page' },
-//   { image: P2_I4, title: 'Checkout Page' },
-//   { image: P2_I5, title: 'Confirmation Page' },
-//   { image: P2_I6, title: 'Reviews Page' },
-// ];
-
-// const verticalImages2 = [
-//   { image: P1_I1, title: 'Main Page' },
-//   { image: P1_I2, title: 'Blog Page' },
-//   { image: P1_I3, title: 'FoodRecipe Page' },
-//   { image: P1_I4, title: 'ClimateWise Precautions Page' },
-//   { image: P1_I5, title: 'Shop Page' },
-// ];
-
 const Portfolio = () => {
   return (
 
@@ -100,8 +68,6 @@ const Portfolio = () => {
               <div className='bottom-card'>
               <div className="portfolio-card-title">{card.title}</div>
               <div className="portfolio-card-links">
-                {/* <a href="#">{card.link1}</a>
-                <a href="#">{card.link2}</a> */}
                 <a href={card.link1} target="_blank" rel="noopener noreferrer">Github</a>
                 <a href={card.link2} target="_blank" rel="noopener noreferrer">Live Demo</a>
               </div>
@@ -130,32 +96,6 @@ const Portfolio = () => {
           ))}
         </div>
         </div>
-
-        {/* <div className="extra-sections">
-          <div className="section-heading">
-            <h2>Figma <span>Design</span></h2>
-          </div>
-          <div className="vertical-images-container">
-            <h4><span>Health Care Website</span></h4>
-            <div className="vertical-images-grid">
-              {verticalImages2.map((item, index) => (
-                <div key={index} className="vertical-image">
-                  <img src={item.image} alt={`Vertical Image ${index + 1}`} />
-                  <div className="vertical-image-title">{item.title}</div>
-                </div>
-              ))}
-            </div>
-            <h4><span>E-Commerce Website</span></h4>
-            <div className="vertical-images-grid">
-              {verticalImages1.map((item, index) => (
-                <div key={index} className="vertical-image">
-                  <img src={item.image} alt={`Vertical Image ${index + 1}`} />
-                  <div className="vertical-image-title">{item.title}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
 

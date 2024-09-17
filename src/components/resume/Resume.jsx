@@ -156,8 +156,8 @@ const Resume = () => {
         <div className="small-cards-container">
           {smallCards.map(card => (
             <div key={card.id} className="small-card">
-              <img src={card.image} alt="Card image" className="small-card-image" />
-              <p className="small-card-text">{card.text}</p>
+              <img src={card.image} alt="Card image" className="small-card-image"/>
+              <div className="small-card-text">{card.text}</div>
             </div>
           ))}
         </div>

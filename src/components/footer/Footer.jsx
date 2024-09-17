@@ -1,23 +1,21 @@
 import React from 'react'
 import './footer.css'
-import { FaLinkedin, FaGithub, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import cv from "../../assets/ANANDA_KUMAR_RESUME.pdf"
+
 
 const Footer = () => {
   return (
 
     <footer className="footer-section">
-    <div className="footer-social-icons">
-      <a className='linkedin' href="https://www.linkedin.com/in/ananda-kumar-b08803228/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-      <a className='github' href="https://github.com/anandakumar0012" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-      <a className='facebook' href="https://www.facebook.com/anandduke.anand" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-      <a className='instagram' href="https://www.instagram.com/anand_hyna/?hl=en" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-      <a className='twitter' href="https://x.com/anandakumar0012" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-    </div>
-    <div className="footer-text">
-      <p>2024 &copy; Ananda-Kumar. Design by Ananda-Kumar.</p>
-    </div>
-  </footer>
-    
+      <div className="footer-text">
+        <p>Ananda-Kumar</p>
+      </div>
+      <div className="footer-button-container">
+        <a href={cv} download className="btn primary-btn footer-primary">Download Resume</a>
+        <a href="mailto:anandakumar0012@gmail.com" target='_blank' className="btn secondary-btn footer-secondary">Hire Me</a>
+      </div>
+    </footer>
+
   )
 }
 
